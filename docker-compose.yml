@@ -17,7 +17,7 @@ services:
     env_file: .env
     restart: on-failure
     volumes:
-      - ./pg-data:/var/lib/postgresql/data/pgdata
+      - ./pg-data:/data/postgres
   frontend:
     container_name: frontend
     restart: unless-stopped
